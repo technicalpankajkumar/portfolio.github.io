@@ -1,0 +1,78 @@
+:root{
+    --color1:#253361;
+    --color2:#0d1b4c;
+    
+}
+  .footer-color { 
+    background-color: var(--color1);
+}
+.bfooter-color { 
+    background: var(--color2);
+}
+  ul{
+      list-style: none;
+      display: inline-flex;
+      padding:0px;
+  }
+ #social-icon li{
+    text-align: center;
+    font-size: 30px;
+    margin: 5px;
+    width: 47px;
+    background: #07617d;
+    border-radius: 30px;   
+  }
+
+  .navbar-nav li{
+      font-family: monospace;
+      font-weight: bold;
+      width: 130px;
+      text-align: center;
+      color:white;
+      cursor: pointer;
+  }
+  #button .navbar-nav li:hover{
+      background:#f9a828;
+      border-radius:5px;
+      padding:2px;
+      color: black;
+      border-bottom:7px solid green;
+      transition: 1s;
+  }
+  .progress-bar{
+    animation-name: progress-bar;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    border-radius:0px 10px 10px 0px;
+
+    color: whitesmoke;
+    font-weight: bold;
+  }
+  @keyframes progress-bar{
+      from{
+
+      }
+      to{
+          width: 90%;
+      }
+  }
+#h-profession{
+    font-size: 15px;
+    font-weight: 400;
+    border-left:5px solid red;
+    padding-left: 5px;
+}
+#h-des, #a-des{
+    text-align: justify;
+}
+#h-social{
+    border-top: 4px solid #155263;
+    border-radius:10px;
+    width: 180px;
+    padding-top: 4px;
+}
+#a-tagline{
+    color: gray;
+}
