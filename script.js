@@ -11,7 +11,7 @@
 	let all_project=()=>{
            no.style.display="block"
            no1.style.display="block"
-           no2.style.display="block"
+           no2.style.display="bock"
            no3.style.display="block"
 	}
 	let HtmlCssJs=()=>
@@ -21,3 +21,17 @@
            no2.style.display="block"
            no3.style.display="block"
 	}
+
+    // content copy, paste, cut, viewsource disabled
+
+    let disabled=()=>{
+        alert("This feature is Disabled!!!")
+        event.preventDefault()
+    }
+    var disable=document.querySelector("body")
+
+    disable.addEventListener('copy',disabled)
+    disable.addEventListener('paste',disabled)
+    disable.addEventListener('cut',disabled)
+    disable.addEventListener('contextmenu',disabled)
+

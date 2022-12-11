@@ -26,19 +26,22 @@
   .navbar-nav li{
       font-family: monospace;
       font-weight: bold;
-      width: 130px;
+      width: 125px;
       text-align: center;
-      color:white;
+      color: white;
       cursor: pointer;
-  }
-  #button .navbar-nav li:hover{
-      background:#f9a828;
-      border-radius:5px;
-      padding:2px;
-      color: black;
-      border-bottom:7px solid green;
       transition: 1s;
   }
+  #button .navbar-nav li:hover{
+      background: var(--color2);
+      border-radius:5px;
+      color: white;
+      padding:1px;   
+      transition: 2s;
+  }
+   #button .navbar-nav li a:hover{
+    color: white;
+   }
   .progress-bar{
     animation-name: progress-bar;
     animation-duration: 2s;
@@ -46,7 +49,7 @@
     animation-direction: alternate;
     animation-timing-function: linear;
     border-radius:0px 10px 10px 0px;
-
+   background: green;
     color: whitesmoke;
     font-weight: bold;
   }
@@ -55,7 +58,7 @@
 
       }
       to{
-          width: 90%;
+          width: 100%;
       }
   }
 #h-profession{
@@ -64,7 +67,7 @@
     border-left:5px solid red;
     padding-left: 5px;
 }
-#h-des, #a-des{
+#h-des, #a-des, #p-des{
     text-align: justify;
 }
 #h-social{
