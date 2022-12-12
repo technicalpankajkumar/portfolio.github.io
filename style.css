@@ -20,10 +20,14 @@
     margin: 5px;
     width: 47px;
     background: #07617d;
-    border-radius: 30px;   
+    border-radius: 30px;  
   }
+  #social-icon li:hover{
+    transform: rotate(360deg);
+    transition: 2s;
+   }
 
-  .navbar-nav li{
+   .navbar-nav li{
       font-family: monospace;
       font-weight: bold;
       width: 125px;
@@ -31,6 +35,18 @@
       color: white;
       cursor: pointer;
       transition: 1s;
+  }
+  #navigation .navbar-nav li:hover{
+      background:white;
+      border-radius:3px;
+      padding:1px;   
+      transition: 2s;
+  }
+  #navigation .navbar-nav li a:hover{
+    color: black;
+  }
+  #navigation .color{
+    color: white;
   }
   #button .navbar-nav li:hover{
       background: var(--color2);
@@ -42,7 +58,7 @@
    #button .navbar-nav li a:hover{
     color: white;
    }
-  .progress-bar{
+  #about .progress-bar{
     animation-name: progress-bar;
     animation-duration: 2s;
     animation-iteration-count: 2;
@@ -78,4 +94,31 @@
 }
 #a-tagline{
     color: gray;
+}
+#fixedicons .css-fixedicons{
+  width: 50px;
+  background: var(--color2);
+  height: 50px;
+  border-radius: 50px;
+  line-height: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: -5px;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+#fixedicons .css-fixedicons:hover{
+   background:darkred;
+   animation-name: fixed-icon-animate;
+   animation-duration: 1s;
+}
+@keyframes fixed-icon-animate{
+  from{
+
+  }
+  to{
+    width: 55px;
+    height: 55px;
+    transform: rotate(360deg);
+  }
 }
